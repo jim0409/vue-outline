@@ -1,10 +1,42 @@
 <template>
+  <sidebar-menu :menu="menu" />
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        menu: [
+          {
+            header: 'Main Navigation',
+            hiddenOnCollapse: true
+          },
+          {
+            href: '/',
+            title: 'Home',
+            icon: 'fa fa-user'
+          },
+          {
+            href: '/about',
+            title: 'About',
+            icon: 'fa fa-chart-area',
+            child: [
+              {
+                href: '/chart/sub-about',
+                title: 'Sub Link'
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+</script>
 
 <style>
 #app {
