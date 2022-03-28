@@ -1,9 +1,5 @@
 <template>
   <sidebar-menu :menu="menu" />
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
@@ -13,22 +9,25 @@
       return {
         menu: [
           {
-            header: 'Main Navigation',
+            header: 'Chlick',
             hiddenOnCollapse: true
           },
           {
-            href: '/',
+            href: '/home',
             title: 'Home',
             icon: 'fa fa-user'
           },
           {
-            href: '/about',
-            title: 'About',
+            title: 'ItemTree',
             icon: 'fa fa-chart-area',
             child: [
               {
-                href: '/chart/sub-about',
-                title: 'Sub Link'
+                href: '/home',
+                title: 'home'
+              },
+              {
+                href: '/about',
+                title: 'about'
               }
             ]
           }
