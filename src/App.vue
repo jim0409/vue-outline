@@ -1,40 +1,51 @@
 <template>
   <sidebar-menu :menu="menu" />
-  <router-view/>
+  <router-view />
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        menu: [
-          {
-            header: 'Chlick',
-            hiddenOnCollapse: true
-          },
-          {
-            href: '/home',
-            title: 'Home',
-            icon: 'fa fa-user'
-          },
-          {
-            title: 'ItemTree',
-            icon: 'fa fa-chart-area',
-            child: [
-              {
-                href: '/home',
-                title: 'home'
-              },
-              {
-                href: '/about',
-                title: 'about'
-              }
-            ]
-          }
-        ]
-      }
+export default {
+  data() {
+    return {
+      menu: [
+        {
+          header: 'Chlick',
+          hiddenOnCollapse: true
+        },
+        {
+          href: '/home',
+          title: 'Home',
+          icon: 'fa fa-user'
+        },
+        {
+          title: 'ItemTree',
+          icon: 'fa fa-chart-area',
+          child: [
+            {
+              title: 'homeabove',
+              href: '/home',
+            },
+            // second level folder
+            {
+              title: 'aboutabove',
+              href: '/about',
+              child: [
+                {
+                  title: 'homeunder',
+                  href: '/home',
+                },
+                {
+                  title: 'aboutunder',
+                  href: '/about',
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
+}
 </script>
 
 <style>

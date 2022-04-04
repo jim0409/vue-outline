@@ -9,6 +9,30 @@ const routes: Array<RouteRecordRaw> = [
     name: 'home',
     path: '/home',
     component: () => import('../views/HomeView.vue'),
+    children: [
+      {
+        name: 'home',
+        path: '/home',
+        component: () => import('../views/HomeView.vue'),
+      },
+      {
+        name: 'about',
+        path: '/about',
+        component: () => import('../views/AboutView.vue'),
+        children: [
+          {
+            name: 'home',
+            path: '/home',
+            component: () => import('../views/HomeView.vue'),
+          },
+          {
+            name: 'about',
+            path: '/about',
+            component: () => import('../views/AboutView.vue'),
+          },
+        ]
+      },
+    ]
   },
   {
     name: 'about',
