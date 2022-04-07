@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    r3
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
 </template>
