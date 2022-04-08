@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+      <input type ="button" value="click" v-on:click="query" />
   </div>
 </template>
 
@@ -27,15 +28,23 @@ export default defineComponent({
   props: {
     msg: String,
   },
-  setup(){
-    // console.log("test");
-    var data = GetData(url);
+  data(){
+    return {
+      data: false,
+    }
+  },
 
-    // promise can only be used with then
-    data.then( res => {
-      console.log(res)
-    });
+  methods: {
+    query(){
+      var data = GetData(url);
+  
+      // promise can only be used with then
+      data.then( res => {
+        console.log(res)
+      });
+    },
   }
+
 });
 </script>
 
