@@ -163,6 +163,9 @@ body {
 #demo {
   padding-left: 290px;
   transition: 0.3s ease;
+  /* padding-block-end: 0ch; */
+  padding-bottom: 675px;
+  /* margin:0%; */
 }
 #demo.collapsed {
   padding-left: 65px;
