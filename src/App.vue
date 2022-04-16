@@ -48,9 +48,14 @@ export default {
           hiddenOnCollapse: true,
         },
         {
-          title: "Rear Set Bracket",
+          title: "Rear Set",
           icon: "fa fa-chart-area",
           child: [
+            {
+              hiddenOnCollapse: false,
+              title: "why rear set?",
+              href: "/bikes/why_rear_set",
+            },
             // second level folder
             {
               hiddenOnCollapse: false,

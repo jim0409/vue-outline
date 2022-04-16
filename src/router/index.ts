@@ -11,6 +11,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/about/about.vue'),
   },
   {
+    name: 'whyRearSet',
+    path: '/why_rear_set',
+    component: () => import('@/views/about/about.vue'),
+  },
+  {
     // yamaha
     name: 'r15',
     path: '/bikes/yamaha/r15',
