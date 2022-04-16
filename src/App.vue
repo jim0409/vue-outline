@@ -15,16 +15,8 @@
   <div id="demo" :class="[{ collapsed: collapsed }, { onmobile: isOnMobile }]">
     <div class="demo">
       <div class="container">
-        <h1 style="color:blue">
-          BORN FOR SPEED<div style="color:red;text-align:left;font-size: 14px;font-weight: 300">Hizran </div>
-          <!-- <div style="text-align:right;">
-            <a
-              style="color: red;text-transform: uppercase;font-size: 14px;font-weight: 400"
-              href="https://line.me/R/ti/p/%40pnl5524m"
-            >
-              Born for speed
-            </a>
-          </div> -->
+        <h1 style="color: red">
+          BORN FOR SPEED<div style="color:blue;text-align:left;font-size: 16px;font-weight: 300"><a href="https://shopee.tw/search?keyword=%E7%A6%BE%E5%80%89">Hizran</a></div>
         </h1>
         <hr style="margin: 50px 0px; border: 1px solid #e3e3e3" />
         <router-view />
@@ -97,8 +89,8 @@ export default {
           hiddenOnCollapse: true,
         },
         {
-          href: "/shopee",
-          title: "Shopee",
+          href: "/shops",
+          title: "Shops",
           icon: "fa fa-user",
         },
       ],
@@ -154,8 +146,8 @@ body {
   /* background-position: center; */
   /* background-size: auto; */
   /* background-size: 100%;  */
-  /* background-size: cover; */
-  background-size:contain;
+  background-size: cover;
+  /* background-size:contain; */
   background-repeat:no-repeat;
   background-attachment: fixed;
   border:1px #ccc solid;

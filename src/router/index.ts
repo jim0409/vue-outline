@@ -35,9 +35,9 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/bikes/honda/HondaCBR650.vue'),
   },
   {
-    name: 'shopee',
-    path: '/shopee',
-    component: () => import('@/views/shops/ShopeeShops.vue'),
+    name: 'shops',
+    path: '/shops',
+    component: () => import('@/views/shops/OnlineShops.vue'),
   },
 ]
 

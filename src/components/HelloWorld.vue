@@ -1,27 +1,12 @@
 <template>
   <div class="hello">
     <h1 style="color:blue;">{{ msg }}</h1>
-      <input type ="button" value="click" v-on:click="query" />
   </div>
 </template>
 
 // use typescript inside script
 <script lang="ts">
 import { defineComponent } from 'vue';
-import axios from "axios";
-
-async function GetData(url: string) {
-  let data;
-  await axios.get(url).then(res => {
-    data = JSON.stringify(res.data);
-  }).catch(err => {
-    console.log(err);
-  })
-  return data;
-}
-
-const url = 'http://127.0.0.1/demo.json';
-
 
 export default defineComponent({
   name: 'HelloWorld',
@@ -32,17 +17,6 @@ export default defineComponent({
     return {
       data: false,
     }
-  },
-
-  methods: {
-    query(){
-      var data = GetData(url);
-  
-      // promise can only be used with then
-      data.then( res => {
-        console.log(res)
-      });
-    },
   }
 
 });
