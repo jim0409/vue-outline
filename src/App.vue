@@ -15,16 +15,16 @@
   <div id="demo" :class="[{ collapsed: collapsed }, { onmobile: isOnMobile }]">
     <div class="demo">
       <div class="container">
-        <h1 style="color:white">
-          Hizran
-          <div style="text-align:right;">
+        <h1 style="color:blue">
+          BORN FOR SPEED<div style="color:red;text-align:left;font-size: 14px;font-weight: 300">Hizran </div>
+          <!-- <div style="text-align:right;">
             <a
               style="color: red;text-transform: uppercase;font-size: 14px;font-weight: 400"
               href="https://line.me/R/ti/p/%40pnl5524m"
             >
               Born for speed
             </a>
-          </div>
+          </div> -->
         </h1>
         <hr style="margin: 50px 0px; border: 1px solid #e3e3e3" />
         <router-view />
@@ -150,7 +150,8 @@ body {
   font-size: 18px;
   background-color: #f2f4f7;
   background-image: url("../public/rider.jpeg");
-  background-position: center;
+  background-position: top;
+  /* background-position: center; */
   /* background-size: auto; */
   /* background-size: 100%;  */
   /* background-size: cover; */
