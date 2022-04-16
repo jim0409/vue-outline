@@ -12,10 +12,7 @@
     class="sidebar-overlay"
     @click="collapsed = true"
   />
-  <div
-    id="demo"
-    :class="[{'collapsed' : collapsed}, {'onmobile' : isOnMobile}]"
-  >
+  <div id="demo" :class="[{ collapsed: collapsed }, { onmobile: isOnMobile }]">
     <div class="demo">
       <div class="container">
         <!-- <h1>
@@ -27,7 +24,14 @@
             Github
           </a>
         </h1> -->
-        <p>A vue.js sidebar menu component</p>
+        <div>
+          <div>
+            <h1 style="color:white"> Hirzan </h1>
+            <!-- <p>hizran@mail.com</p> -->
+            <h3 style="text-align:right;color:white;">Born for Speed</h3>
+          </div>
+          <div style="text-align:right;color:white;"><a href="https://line.me/R/ti/p/%40pnl5524m">message</a></div>
+        </div>
         <div>
           <!-- Select theme:
           <select v-model="selectedTheme">
@@ -40,7 +44,7 @@
             </option>
           </select> -->
         </div>
-        <hr style="margin: 50px 0px;border: 1px solid #e3e3e3;">
+        <hr style="margin: 50px 0px; border: 1px solid #e3e3e3" />
         <router-view />
       </div>
     </div>
@@ -53,12 +57,12 @@ export default {
     return {
       menu: [
         {
-          header: "Chlick",
+          header: "About Us",
           hiddenOnCollapse: true,
         },
         {
-          href: "/home",
-          title: "Home",
+          href: "/about",
+          title: "Hirzan",
           // icon: "fa fa-user",
           icon: {
             element: "span",
@@ -66,11 +70,11 @@ export default {
           },
         },
         {
-          header: "Biker",
+          header: "Products",
           hiddenOnCollapse: true,
         },
         {
-          title: "Bikes",
+          title: "Rear Set Bracket",
           icon: "fa fa-chart-area",
           child: [
             // second level folder
@@ -107,25 +111,29 @@ export default {
           ],
         },
         {
-          href: "/about",
-          title: "About",
+          header: "Shops",
+          hiddenOnCollapse: true,
+        },
+        {
+          href: "/shopee",
+          title: "Shopee",
           icon: "fa fa-user",
         },
       ],
       collapsed: false,
       themes: [
         {
-          name: 'Default theme',
-          input: ''
+          name: "Default theme",
+          input: "",
         },
         {
-          name: 'White theme',
-          input: 'white-theme'
-        }
+          name: "White theme",
+          input: "white-theme",
+        },
       ],
-      selectedTheme: 'white-theme',
+      selectedTheme: "white-theme",
       isOnMobile: false,
-    }
+    };
   },
   mounted() {
     this.onResize();
@@ -148,8 +156,8 @@ export default {
         this.isOnMobile = false;
         this.collapsed = false;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -159,7 +167,15 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   background-color: #f2f4f7;
+  background-image: url("../public/rider.jpeg");
+  background-size: cover;
+  /* background-size: auto; */
+  background-repeat:no-repeat;
+  background-size: 100%; 
+  background-attachment: fixed;
+  border:1px #ccc solid;
   color: #262626;
+  opacity: 0.8;
 }
 
 #demo {

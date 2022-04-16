@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 style="color:blue;">{{ msg }}</h1>
       <input type ="button" value="click" v-on:click="query" />
   </div>
 </template>

@@ -6,9 +6,9 @@ const routes: Array<RouteRecordRaw> = [
     redirect: { name: 'home' },
   },
   {
-    name: 'home',
-    path: '/home',
-    component: () => import('@/views/homepage/HomeView.vue'),
+    name: 'about',
+    path: '/about',
+    component: () => import('@/views/about/about.vue'),
   },
   {
     // yamaha
@@ -35,9 +35,9 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/bikes/honda/HondaCBR650.vue'),
   },
   {
-    name: 'about',
-    path: '/about',
-    component: () => import('@/views/about/AboutView.vue'),
+    name: 'shopee',
+    path: '/shopee',
+    component: () => import('@/views/shops/ShopeeShops.vue'),
   },
 ]
 
