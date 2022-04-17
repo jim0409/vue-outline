@@ -25,7 +25,7 @@
               font-weight: 300;
             "
           >
-            <a href="https://shopee.tw/search?keyword=%E7%A6%BE%E5%80%89"
+            <a href="https://www.google.com/url?q=https%3A%2F%2Flin.ee%2F3xNQ4qh&sa=D&sntz=1&usg=AOvVaw18XwSk3htf49-Spk6m8pFF"
               >Hizran</a
             >
           </div>
