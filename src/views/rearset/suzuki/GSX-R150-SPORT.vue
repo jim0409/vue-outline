@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    650
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HelloWorld msg="GSX-R150-SPORT"/>
   </div>
 </template>
 
@@ -10,7 +9,7 @@ import { defineComponent } from 'vue';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
 export default defineComponent({
-  name: 'HondaCB650',
+  name: 'GSX-R150-SPORT',
   components: {
     HelloWorld,
   },

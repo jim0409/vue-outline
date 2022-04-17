@@ -18,26 +18,32 @@ const routes: Array<RouteRecordRaw> = [
   {
     // yamaha
     name: 'r15',
-    path: '/bikes/yamaha/r15',
-    component: () => import('@/views/bikes/yamaha/YamahaR15.vue'),
+    path: '/rearset/yamaha/r15',
+    component: () => import('@/views/rearset/yamaha/YamahaR15.vue'),
   },
   {
     // yamaha
     name: 'r3',
-    path: '/bikes/yamaha/r3',
-    component: () => import('@/views/bikes/yamaha/YamahaR3.vue'),
+    path: '/rearset/yamaha/r3',
+    component: () => import('@/views/rearset/yamaha/YamahaR3.vue'),
   },
   {
-    // honda
-    name: 'cb650',
-    path: '/bikes/honda/cb650',
-    component: () => import('@/views/bikes/honda/HondaCB650.vue'),
+    // suzuki
+    name: 'gsx-r150-semi',
+    path: '/rearset/suzuki/gsx-r150/semi',
+    component: () => import('@/views/rearset/suzuki/GSX-R150-SEMI.vue'),
   },
   {
-    // honda
-    name: 'cbr650',
-    path: '/bikes/honda/cbr650',
-    component: () => import('@/views/bikes/honda/HondaCBR650.vue'),
+    // suzuki
+    name: 'gsx-r150-sport',
+    path: '/rearset/suzuki/gsx-r150/sport',
+    component: () => import('@/views/rearset/suzuki/GSX-R150-SPORT.vue'),
+  },
+  {
+    // suzuki
+    name: 'gsx-r150-race',
+    path: '/rearset/suzuki/gsx-r150/race',
+    component: () => import('@/views/rearset/suzuki/GSX-R150-RACE.vue'),
   },
   {
     name: 'shops',

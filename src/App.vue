@@ -16,7 +16,19 @@
     <div class="demo">
       <div class="container">
         <h1 style="color: red">
-          BORN FOR SPEED<div style="color:blue;text-align:left;font-size: 16px;font-weight: 300"><a href="https://shopee.tw/search?keyword=%E7%A6%BE%E5%80%89">Hizran</a></div>
+          BORN FOR SPEED
+          <div
+            style="
+              color: blue;
+              text-align: left;
+              font-size: 16px;
+              font-weight: 300;
+            "
+          >
+            <a href="https://shopee.tw/search?keyword=%E7%A6%BE%E5%80%89"
+              >Hizran</a
+            >
+          </div>
         </h1>
         <hr style="margin: 50px 0px; border: 1px solid #e3e3e3" />
         <router-view />
@@ -63,27 +75,36 @@ export default {
               child: [
                 {
                   title: "r15",
-                  // href: "/home",
-                  href: "/bikes/yamaha/r15",
+                  href: "/rearset/yamaha/r15",
                 },
                 {
                   title: "r3",
-                  href: "/bikes/yamaha/r3",
+                  href: "/rearset/yamaha/r3",
                 },
               ],
             },
             // second level folder
             {
               hiddenOnCollapse: false,
-              title: "honda",
+              title: "suzuki",
               child: [
                 {
-                  title: "cb650",
-                  href: "/bikes/honda/cb650",
-                },
-                {
-                  title: "cbr650",
-                  href: "/bikes/honda/cbr650",
+                  title: "gsx-r150",
+                  // href: "/rearset/suzuki/gsx-r150",
+                  child: [
+                    {
+                      title: "gsx-r150-semi",
+                      href: "/rearset/suzuki/gsx-r150/semi",
+                    },
+                    {
+                      title: "gsx-r150-sport",
+                      href: "/rearset/suzuki/gsx-r150/sport",
+                    },
+                    {
+                      title: "gsx-r150-race",
+                      href: "/rearset/suzuki/gsx-r150/race",
+                    },
+                  ],
                 },
               ],
             },
@@ -153,9 +174,9 @@ body {
   /* background-size: 100%;  */
   background-size: cover;
   /* background-size:contain; */
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  border:1px #ccc solid;
+  border: 1px #ccc solid;
   color: #262626;
   opacity: 0.8;
 }
